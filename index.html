@@ -8,18 +8,18 @@
   <body>
     <a-scene>
       <a-assets>
-        <img id="boxTexture" src="https://sun9-73.userapi.com/impg/AmeF47GtMZbzb-qmdvLKOoJDwUd4W7DRITrihQ/Co3yfHvQxd4.jpg?size=995x995&quality=96&sign=266ab5b988ed0bf1baf8f28d22078e1a&type=album">
+        <img id="boxTexture" src="https://sun9-36.userapi.com/impg/E-JbMWoZB_SRpdNsGVw_o95tYAAiqyM1VWkobA/wQzEv7Fwpyo.jpg?size=2160x2160&quality=96&sign=08152e59319396acff4f6d1220bdbe15&type=album">
         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
       </a-assets>
       
-      <a-sphere position="0 2 -5" rotation="0 45 45" scale="2 2 2" src="#boxTexture">
+      <a-box position="0 2 -5" rotation="0 45 45" scale="2 2 2" src="#boxTexture">
         <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
           to="0 2.2 -5"></a-animation>
         <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
         <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
         <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
-      </a-sphere>
+      </a-box>
       
       <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
       <a-light type="ambient" color="#445451"></a-light>
